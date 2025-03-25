@@ -1,5 +1,8 @@
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import Image from "next/image";
 import Link from "next/link";
+import { FaPhone } from "react-icons/fa6";
+import { TbMailFilled } from "react-icons/tb";
 
 const herodata = {
   schools: 20,
@@ -234,7 +237,7 @@ export default function Home() {
             alt="Hero Image"
             width={100}
             height={100}
-            className="max-w-[100px] mr-20"
+            className="max-w-[100px] lg:mr-20"
           />
         </div>
       </div>
@@ -378,28 +381,202 @@ export default function Home() {
             alt="Hero Image"
             width={100}
             height={100}
-            className="max-w-[100px] mr-20"
+            className="max-w-[100px] lg:mr-20"
           />
         </div>
       </div>
       {/*  */}
       <div className="lg:px-20 px-6">
-        <div className="">
-          <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+        <div className="flex gap-5 items-center pt-2">
+          <h1 className="text-primary text-xl md:text-3xl lg:text-4xl">
             We&apos;re Here To Help: FAQ
           </h1>
           <span className="inline-block">
+            <Image
+              src="/faq.svg"
+              alt="Hero Image"
+              width={100}
+              height={100}
+              className="max-w-[30px] lg:max-w-[40px]"
+            />
+          </span>
+        </div>
+        <FaqAccordion />
+        <div className="flex ">
           <Image
-            src="/faq.svg"
+            src="/rocketlArrow.png"
+            alt="Hero Image"
+            width={100}
+            height={100}
+            className="max-w-[50px] w-auto lg:ml-20"
+          />
+        </div>
+      </div>
+
+      {/*  */}
+      <div className="lg:px-20 px-6">
+        <div className="">
+          <h1 className="text-primary md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
+            What Our Customers <span className="flex items-center gap-5"> Say{" "}
+          <Image
+            src="/smile.svg"
+            alt="Hero Image"
+            width={100}
+            height={100}
+            className="max-w-[30px] lg:max-w-[40px]"
+          /></span>
+          </h1>
+         
+        </div>
+        <div className="flex justify-end">
+          <Image
+            src="/rarrow.svg"
             alt="Hero Image"
             width={100}
             height={100}
             className="max-w-[30px] lg:max-w-[40px]"
           />
-          </span>
         </div>
-        
-  
+        <div className="pt-10 grid md:grid-cols-2 gap-x-8 gap-y-5">
+          <Image
+            src="/c1.png"
+            alt="Hero Image"
+            width={1000}
+            height={1000}
+            className=""
+          />
+          <Image
+            src="/c2.png"
+            alt="Hero Image"
+            width={1000}
+            height={1000}
+            className=""
+          />
+        </div>
+        <div className="w-full flex justify-end">
+          <Image
+            src="/rocketArrow2.png"
+            alt="Hero Image"
+            width={100}
+            height={100}
+            className="max-w-[100px] lg:mr-20"
+          />
+        </div>
+      </div>
+      {/*  */}
+      <div className="lg:px-20 px-3 pb-10">
+        <div className="flex gap-5 px-3 lg:px-0 items-center">
+          <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+            Contact Us{" "}
+          </h1>
+          <Image
+            src="/phone.svg"
+            alt="Hero Image"
+            width={100}
+            height={100}
+            className="max-w-[30px] lg:max-w-[40px]"
+          />
+        </div>
+        <div className="lg:px-10 pt-10">
+          <div className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
+            <div className="">
+              <h1 className="lg:text-5xl md:text-3xl text-2xl lg:pt-10 text-primary lg:max-w-[370px]">
+                More Than Just a Ride:{" "}
+                <span className="text-[#453069]">
+                  {" "}
+                  Safe, Friendly, and{" "}
+                  <span className="flex gap-3">
+                    Reliable
+                    <Image
+                      src="/smiley.svg"
+                      alt="Hero Image"
+                      width={200}
+                      height={200}
+                      className="lg:max-w-[60px] max-w-[30px]"
+                    />
+                  </span>
+                </span>{" "}
+              </h1>
+              <p className="text-gray-600 md:text-xl pt-3">
+                Are you looking for a safe and enjoyable transport? Reach out to
+                us.
+              </p>
+              <div className="md:flex grid lg:pt-10 py-5 gap-5 text-[#453069]">
+                <div className="">
+                  <h1 className="text-xl font-semibold">Phone Number</h1>
+                  <div className="flex gap-5 items-center">
+                    <FaPhone />
+                    <h1>08046333629</h1>
+                  </div>
+                </div>
+                <div className="">
+                  <h1 className="text-xl font-semibold">Email</h1>
+                  <div className="flex gap-5 items-center">
+                    <TbMailFilled className="text-xl" />
+                    <h1>padikkaltt@gmail.com</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <form
+                action=""
+                className="bg-[#FFFFE5] border rounded-xl p-5 lg:p-10 grid gap-7 border-gray-300"
+              >
+                <div className="grid gap-2">
+                  <label htmlFor="" className="lg:text-xl">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="jacob"
+                    className="bg-white border border-gray-300  py-2 px-5 rounded-md"
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="" className="lg:text-xl">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="jacob@gmail.com"
+                    className="bg-white border border-gray-300  py-2 px-5 rounded-md"
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <label htmlFor="" className="lg:text-xl">
+                    Address
+                  </label>
+                  <textarea
+                    name="address"
+                    id="address"
+                    placeholder="Type your Address here...."
+                    className="bg-white border min-h-[150px] border-gray-300  py-2 px-5 rounded-md"
+                  ></textarea>
+                </div>
+                <div className="">
+                  <button
+                    type="submit"
+                    className="text-white px-4 py-2 bg-primary rounded-full flex gap-5 items-center"
+                  >
+                    Send
+                    <Image
+                      src="/send.svg"
+                      alt="Hero Image"
+                      width={100}
+                      height={100}
+                      className="max-w-[30px] lg:max-w-[40px]"
+                    />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
