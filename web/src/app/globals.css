@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffd700;
+  --color-secondary: #ffffb8;
+  --color-tertiary: #FCB303;
+  --color-lb: #A9A9A9;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
