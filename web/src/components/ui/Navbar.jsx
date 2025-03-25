@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { TbMenu } from "react-icons/tb";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
           width="200"
           height="200"
           alt="padikkal"
-          className="max-w-[170px]"
+          className="lg:max-w-[170px] max-w-[100px]"
         />
         <div className="lg:flex hidden gap-10 items-center">
             <Link href={"/"} className="hover:text-white duration-200">About</Link>
@@ -21,6 +22,9 @@ const Navbar = () => {
             <Link href={"/"} className="hover:text-white duration-200">FAQ</Link>
             <Link href={"/"} className="hover:text-white duration-200">Testimonials</Link>
             <Link href={"/"} className="hover:text-black duration-200 text-white bg-[#FBC914] py-[10px] px-7 rounded-md border border-white">Get Started</Link>
+        </div>
+        <div className="lg:hidden text-xl">
+        <TbMenu />
         </div>
       </div>
     </div>
