@@ -1,4 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    async headers() {
+      return [
+        {
+          source: '/api/send-mail',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'no-store, max-age=0',
+            },
+          ],
+        },
+      ];
+    },
+  };
+  
+  export default nextConfig;
+  
