@@ -117,7 +117,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between">
                 <Link
-                  href={"/"}
+                  href={"/#contact"}
                   className="hover:text-black h-fit duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md border border-white shadow-2xl "
                 >
                   Get Started
