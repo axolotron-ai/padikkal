@@ -1,4 +1,6 @@
+import AnimatedNumber from "@/components/ui/AnimatedNumber";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import Form from "@/components/ui/Form";
 import Image from "next/image";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
@@ -63,11 +65,17 @@ export default function Home() {
             </div>
             <div className="pt-5 mt-10 bg-secondary p-3 rounded-md text-tertiary hidden lg:grid grid-cols-2 divide-x divide-tertiary w-fit">
               <div className="text-center px-5">
-                <h1 className="lg:text-3xl">{herodata.schools}+</h1>
+                <AnimatedNumber
+                  value={herodata.schools}
+                  className={"lg:text-3xl"}
+                />
                 <h1>Schools</h1>
               </div>
               <div className="text-center px-5">
-                <h1 className="lg:text-3xl">{herodata.students}+</h1>
+                <AnimatedNumber
+                  value={herodata.students}
+                  className={"lg:text-3xl"}
+                />
                 <h1>Students</h1>
               </div>
             </div>
@@ -95,11 +103,17 @@ export default function Home() {
                 />
                 <div className=" bg-secondary p-3 text-sm rounded-md text-tertiary grid grid-cols-2 divide-x divide-tertiary w-fit absolute bottom-0 md:bottom-5 right-0">
                   <div className="text-center px-5">
-                    <h1 className="lg:text-3xl">{herodata.schools}+</h1>
+                    <AnimatedNumber
+                      value={herodata.schools}
+                      className={"lg:text-3xl"}
+                    />{" "}
                     <h1>Schools</h1>
                   </div>
                   <div className="text-center px-5">
-                    <h1 className="lg:text-3xl">{herodata.students}+</h1>
+                    <AnimatedNumber
+                      value={herodata.students}
+                      className={"lg:text-3xl"}
+                    />
                     <h1>Students</h1>
                   </div>
                 </div>
@@ -144,7 +158,10 @@ export default function Home() {
         </div>
       </div>
       {/* about us */}
-      <div id="about" className="lg:px-20 md:px-10 px-6 w-full lg:pt-10 scroll-mt-[120px]">
+      <div
+        id="about"
+        className="lg:px-20 md:px-10 px-6 w-full lg:pt-10 scroll-mt-[120px]"
+      >
         <div className="flex gap-5 items-center">
           <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
             Who we are
@@ -242,7 +259,10 @@ export default function Home() {
         </div>
       </div>
       {/* our partner */}
-      <div id="partner" className="lg:px-20 px-6 bg-secondary py-10 scroll-mt-[70px]">
+      <div
+        id="partner"
+        className="lg:px-20 px-6 bg-secondary py-10 scroll-mt-[70px]"
+      >
         <div className="lg:flex justify-between">
           <div className="flex gap-5 items-center">
             <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
@@ -417,16 +437,19 @@ export default function Home() {
       <div id="testimonials" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="">
           <h1 className="text-primary md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
-            What Our Customers <span className="flex items-center gap-5"> Say{" "}
-          <Image
-            src="/smile.svg"
-            alt="Hero Image"
-            width={100}
-            height={100}
-            className="max-w-[30px] lg:max-w-[40px]"
-          /></span>
+            What Our Customers{" "}
+            <span className="flex items-center gap-5">
+              {" "}
+              Say{" "}
+              <Image
+                src="/smile.svg"
+                alt="Hero Image"
+                width={100}
+                height={100}
+                className="max-w-[30px] lg:max-w-[40px]"
+              />
+            </span>
           </h1>
-         
         </div>
         <div className="flex justify-end">
           <Image
@@ -480,7 +503,7 @@ export default function Home() {
         <div id="contact" className="lg:px-10 pt-10 scroll-mt-20">
           <div className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
             <div className="">
-              <h1 className="lg:text-5xl md:text-3xl text-2xl lg:pt-10 text-primary lg:max-w-[370px]">
+              <h1 className="lg:text-5xl text-3xl lg:pt-10 text-primary lg:max-w-[370px]">
                 More Than Just a Ride:{" "}
                 <span className="text-[#453069]">
                   {" "}
@@ -504,76 +527,22 @@ export default function Home() {
               <div className="md:flex grid lg:pt-10 py-5 gap-5 text-[#453069]">
                 <div className="">
                   <h1 className="text-xl font-semibold">Phone Number</h1>
-                  <div className="flex gap-5 items-center">
+                  <Link href={"tel:08046333629"} className="flex gap-5 items-center">
                     <FaPhone />
                     <h1>08046333629</h1>
-                  </div>
+                  </Link>
                 </div>
                 <div className="">
                   <h1 className="text-xl font-semibold">Email</h1>
-                  <div className="flex gap-5 items-center">
+                  <Link href={"mailto:padikkaltt@gmail.com"} className="flex gap-5 items-center">
                     <TbMailFilled className="text-xl" />
                     <h1>padikkaltt@gmail.com</h1>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="w-full">
-              <form
-                action=""
-                className="bg-[#FFFFE5] border rounded-xl p-5 lg:p-10 grid gap-7 border-gray-300"
-              >
-                <div className="grid gap-2">
-                  <label htmlFor="" className="lg:text-xl">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="jacob"
-                    className="bg-white border border-gray-300  py-2 px-5 rounded-md w-full"
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <label htmlFor="" className="lg:text-xl">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="jacob@gmail.com"
-                    className="bg-white border border-gray-300  py-2 px-5 rounded-md w-full"
-                  />
-                </div>
-                <div className="grid gap-2">
-                  <label htmlFor="" className="lg:text-xl">
-                    Address
-                  </label>
-                  <textarea
-                    name="address"
-                    id="address"
-                    placeholder="Type your Address here...."
-                    className="bg-white border min-h-[150px] border-gray-300  py-2 px-5 rounded-md w-full"
-                  ></textarea>
-                </div>
-                <div className="">
-                  <button
-                    type="submit"
-                    className="text-white px-4 py-2 bg-primary rounded-full flex gap-5 items-center"
-                  >
-                    Send
-                    <Image
-                      src="/send.svg"
-                      alt="Hero Image"
-                      width={100}
-                      height={100}
-                      className="max-w-[30px] lg:max-w-[40px]"
-                    />
-                  </button>
-                </div>
-              </form>
+              <Form/>
             </div>
           </div>
         </div>
