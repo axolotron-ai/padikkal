@@ -123,7 +123,7 @@ export async function POST(req) {
             
           </div>
           <div class="footer">
-            <p>&copy; ${new Date().getFullYear()} PADIKAL Travels Private Limited. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} PADIKKAL Travels Private Limited. All rights reserved.</p>
             <p>This is an automated message, please do not reply directly to this email.</p>
           </div>
         </div>
@@ -245,7 +245,7 @@ export async function POST(req) {
 
           </div>
           <div class="footer">
-            <p>&copy; ${new Date().getFullYear()} PADIKAL Travels Private Limited. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} PADIKKAL Travels Private Limited. All rights reserved.</p>
             <p>304, No16,Mittal Tower Residency,Mittal Appartments, M.G.Road, Bangalore, Karnataka-560001</p>
             <p>If you have any questions, please contact us at: padikkaltt@gmail.com</p>
           </div>
