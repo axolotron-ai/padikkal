@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className="lg:flex hidden">
               <Link
-                href={"/"}
+                href={"/#contact"}
                 className="hover:text-black duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Get Started
