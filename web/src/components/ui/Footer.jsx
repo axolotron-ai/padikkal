@@ -125,7 +125,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-secondary mt-8 pt-8  text-[#453069]">
           <p>
-            © {new Date().getFullYear()} Padrigal Travels Private Limited. All
+            © {new Date().getFullYear()} Padikkal Travels Private Limited. All
             rights reserved.
           </p>
         </div>

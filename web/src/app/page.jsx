@@ -56,7 +56,7 @@ export default function Home() {
             <div className="lg:flex hidden">
               <Link
                 href={"/"}
-                className="hover:text-black duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md border border-white shadow-2xl "
+                className="hover:text-black duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Get Started
               </Link>
@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </div>
       {/* about us */}
-      <div className="lg:px-20 md:px-10 px-6 w-full lg:pt-10">
+      <div id="about" className="lg:px-20 md:px-10 px-6 w-full lg:pt-10 scroll-mt-[120px]">
         <div className="flex gap-5 items-center">
           <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
             Who we are
@@ -174,10 +174,10 @@ export default function Home() {
               of buses. The only thing we focus on is that the comfort quotient
               of our passengers should never be compromised.
             </p>
-            <div className="pt-5">
+            <div className="pt-10">
               <Link
                 href={"/"}
-                className="hover:text-black h-fit duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md border border-white shadow-2xl "
+                className="hover:text-black h-fit duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Learn More
               </Link>
@@ -195,7 +195,7 @@ export default function Home() {
         </div>
       </div>
       {/* why choose us */}
-      <div className="lg:px-20 px-6">
+      <div id="benefit" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="flex gap-5 items-center">
           <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
             Why Choose us
@@ -242,7 +242,7 @@ export default function Home() {
         </div>
       </div>
       {/* our partner */}
-      <div className="lg:px-20 px-6 bg-secondary py-10">
+      <div id="partner" className="lg:px-20 px-6 bg-secondary py-10 scroll-mt-[70px]">
         <div className="lg:flex justify-between">
           <div className="flex gap-5 items-center">
             <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
@@ -414,7 +414,7 @@ export default function Home() {
       </div>
 
       {/*  */}
-      <div className="lg:px-20 px-6">
+      <div id="testimonials" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="">
           <h1 className="text-primary md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
             What Our Customers <span className="flex items-center gap-5"> Say{" "}
@@ -477,7 +477,7 @@ export default function Home() {
             className="max-w-[30px] lg:max-w-[40px]"
           />
         </div>
-        <div className="lg:px-10 pt-10">
+        <div id="contact" className="lg:px-10 pt-10 scroll-mt-20">
           <div className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
             <div className="">
               <h1 className="lg:text-5xl md:text-3xl text-2xl lg:pt-10 text-primary lg:max-w-[370px]">
