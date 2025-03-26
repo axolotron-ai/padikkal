@@ -21,7 +21,7 @@ const Navbar = () => {
             width="200"
             height="200"
             alt="padikkal"
-            className="lg:max-w-[170px] max-w-[100px]"
+            className="lg:max-w-[170px] max-w-[120px]"
           />
           <div className="lg:flex hidden gap-10 items-center">
             <Link href={"/#about"} className="hover:text-white duration-200">

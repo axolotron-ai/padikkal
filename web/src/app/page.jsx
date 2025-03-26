@@ -532,7 +532,7 @@ export default function Home() {
                     name="name"
                     id="name"
                     placeholder="jacob"
-                    className="bg-white border border-gray-300  py-2 px-5 rounded-md"
+                    className="bg-white border border-gray-300  py-2 px-5 rounded-md w-full"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -544,7 +544,7 @@ export default function Home() {
                     name="email"
                     id="email"
                     placeholder="jacob@gmail.com"
-                    className="bg-white border border-gray-300  py-2 px-5 rounded-md"
+                    className="bg-white border border-gray-300  py-2 px-5 rounded-md w-full"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -555,7 +555,7 @@ export default function Home() {
                     name="address"
                     id="address"
                     placeholder="Type your Address here...."
-                    className="bg-white border min-h-[150px] border-gray-300  py-2 px-5 rounded-md"
+                    className="bg-white border min-h-[150px] border-gray-300  py-2 px-5 rounded-md w-full"
                   ></textarea>
                 </div>
                 <div className="">
