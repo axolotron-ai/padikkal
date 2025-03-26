@@ -28,3 +28,10 @@ body {
       scrollbar-width: none;  /* Firefox */
 }
 }
+
+
+.navbar {
+  height: 60px; /* Set a fixed height */
+  transition: height 0.3s ease-in-out;
+}
+
