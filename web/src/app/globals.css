@@ -7,10 +7,13 @@
   --color-secondary: #ffffb8;
   --color-tertiary: #FCB303;
   --color-lb: #A9A9A9;
+  --color-yc: #F39C12;
+  
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 .jakarta {
@@ -35,3 +38,19 @@ body {
   transition: height 0.3s ease-in-out;
 }
 
+
+
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* For Edge and IE */
+body {
+  -ms-overflow-style: none;
+}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { TbMenu } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const NavbarComponent = () => {
   const [open, setOpen] = useState(false);
@@ -14,14 +15,20 @@ const NavbarComponent = () => {
 
   return (
     <div className="">
-      <div className="fixed w-full top-0 left-0 z-[100] navbar">
+      <motion.div
+        initial={{ opacity: 0.5, scale: 1, y: -60 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="fixed w-full top-0 left-0 z-[100] navbar"
+      >
         <div className="flex justify-between items-center py-3 lg:px-20 px-8 bg-primary">
           <Image
             src="/logo.png"
             width="200"
             height="200"
             alt="padikkal"
-            className="lg:max-w-[170px] max-w-[120px]"
+            className="lg:max-w-[170px] max-w-[120px] max-h-[38px]"
           />
           <div className="lg:flex hidden gap-10 items-center">
             <Link href={"/#about"} className="hover:text-white duration-200">
@@ -47,7 +54,7 @@ const NavbarComponent = () => {
             </Link>
             <Link
               href={"/#contact"}
-              className="hover:text-black duration-200 text-white bg-[#FBC914] py-[10px] px-7 rounded-md border border-white shadow-md"
+              className="hover:text-black duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-md"
             >
               Get Started
             </Link>
@@ -56,7 +63,7 @@ const NavbarComponent = () => {
             <TbMenu />
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="h-[60px]"></div>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         <section className="flex flex-col justify-between w-full min-w-[150px] h-[100vh] px-10">
@@ -91,7 +98,7 @@ const NavbarComponent = () => {
               </Link>
               <Link
                 href={"/#contact"}
-                className="hover:text-black duration-200 text-white bg-[#FBC914] py-[10px] px-7 rounded-md border border-white"
+                className="hover:text-black duration-200 text-white bg-yc py-[10px] px-7 rounded-md"
               >
                 Get Started
               </Link>
