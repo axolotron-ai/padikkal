@@ -24,7 +24,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-5 items-center">
             <FaPhone />
-            <h1>08046333629</h1>
+            <h1>08040546060</h1>
 
             </div>
             {/* <div className="flex space-x-4">

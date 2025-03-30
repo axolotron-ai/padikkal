@@ -90,7 +90,7 @@ const Form = () => {
           <button
             type="submit"
             disabled={loading}
-            className="text-white px-4 py-2 bg-primary rounded-full flex gap-5 items-center"
+            className="text-white px-4 py-2 bg-yc shadow-inner shadow-primary rounded-full flex gap-5 items-center"
           >
             {loading ? "Sending..." : "Send"}
             <Image

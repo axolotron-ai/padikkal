@@ -58,7 +58,7 @@ export default function Home() {
             <div className="lg:flex hidden">
               <Link
                 href={"/#contact"}
-                className="hover:text-black duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
+                className="hover:text-black duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Get Started
               </Link>
@@ -163,7 +163,7 @@ export default function Home() {
         className="lg:px-20 md:px-10 px-6 w-full lg:pt-10 scroll-mt-[120px]"
       >
         <div className="flex gap-5 items-center">
-          <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Who we are
           </h1>
           <Image
@@ -194,7 +194,7 @@ export default function Home() {
             <div className="pt-10">
               <Link
                 href={"/"}
-                className="hover:text-black h-fit duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
+                className="hover:text-black h-fit duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Learn More
               </Link>
@@ -214,7 +214,7 @@ export default function Home() {
       {/* why choose us */}
       <div id="benefit" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="flex gap-5 items-center">
-          <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Why Choose us
           </h1>
           <Image
@@ -265,7 +265,7 @@ export default function Home() {
       >
         <div className="lg:flex justify-between">
           <div className="flex gap-5 items-center">
-            <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+            <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
               Our Partner Schools{" "}
             </h1>
             <Image
@@ -356,7 +356,7 @@ export default function Home() {
       {/*  */}
       <div className="lg:px-20 px-6">
         <div className="flex gap-5 items-center">
-          <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Our Vehicles
           </h1>
           <Image
@@ -376,7 +376,7 @@ export default function Home() {
               height={1000}
               className="rounded-md hover:scale-105 object-cover duration-200"
             />
-            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-primary">
+            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-yc">
               <h1 className="text-xl">OMNI</h1>
               <p>(6 Seater)</p>
             </div>
@@ -389,7 +389,7 @@ export default function Home() {
               height={1000}
               className="rounded-md hover:scale-105 object-cover duration-200"
             />
-            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-primary">
+            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-yc">
               <h1 className="text-xl">EXCELO</h1>
               <p>(18 Seater)</p>
             </div>
@@ -408,7 +408,7 @@ export default function Home() {
       {/*  */}
       <div className="lg:px-20 px-6">
         <div className="flex gap-5 items-center pt-2">
-          <h1 className="text-primary text-xl md:text-3xl lg:text-4xl">
+          <h1 className="text-yc text-xl md:text-3xl lg:text-4xl">
             We&apos;re Here To Help: FAQ
           </h1>
           <span className="inline-block">
@@ -436,7 +436,7 @@ export default function Home() {
       {/*  */}
       <div id="testimonials" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="">
-          <h1 className="text-primary md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-yc md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
             What Our Customers{" "}
             <span className="flex items-center gap-5">
               {" "}
@@ -489,7 +489,7 @@ export default function Home() {
       {/*  */}
       <div className="lg:px-20 px-3 pb-10">
         <div className="flex gap-5 px-3 lg:px-0 items-center">
-          <h1 className="text-primary text-2xl md:text-3xl lg:text-4xl">
+          <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Contact Us{" "}
           </h1>
           <Image
@@ -503,7 +503,7 @@ export default function Home() {
         <div id="contact" className="lg:px-10 pt-10 scroll-mt-20">
           <div className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
             <div className="">
-              <h1 className="lg:text-5xl text-3xl lg:pt-10 text-primary lg:max-w-[370px]">
+              <h1 className="lg:text-5xl text-3xl lg:pt-10 text-yc lg:max-w-[370px]">
                 More Than Just a Ride:{" "}
                 <span className="text-[#453069]">
                   {" "}
@@ -529,7 +529,7 @@ export default function Home() {
                   <h1 className="text-xl font-semibold">Phone Number</h1>
                   <Link href={"tel:08046333629"} className="flex gap-5 items-center">
                     <FaPhone />
-                    <h1>08046333629</h1>
+                    <h1>08040546060</h1>
                   </Link>
                 </div>
                 <div className="">
