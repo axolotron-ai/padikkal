@@ -1,3 +1,4 @@
+"use client";
 import AnimatedNumber from "@/components/ui/AnimatedNumber";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import Form from "@/components/ui/Form";
@@ -5,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const herodata = {
   schools: 20,
@@ -12,12 +14,18 @@ const herodata = {
 };
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       {/* hero */}
       <div className="lg:px-20 md:px-10 px-6 lg:pt-20 pt-10 ">
         <div className="grid lg:grid-cols-2">
           <div className="">
-            <h1 className="xl:text-[40px] text-[30px] text-start text-primary jakarta font-[510] lg:leading-[50px]">
+            <motion.h1
+              initial={{ opacity: 0.5, scale: 0.9, y: 50 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="xl:text-[40px] text-[30px] text-start text-primary jakarta font-[510] lg:leading-[50px]"
+            >
               Seamless <span className="text-[#453069]"> School Trips,</span>{" "}
               <span className="relative">
                 Memorable
@@ -41,12 +49,24 @@ export default function Home() {
                   />
                 </span>
               </span>
-            </h1>
-            <p className="lg:text-[22px] text-lb pr-5 text-justify">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0.5, scale: 0.9, x: -150 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="lg:text-[22px] text-lb pr-5 text-justify"
+            >
               We believe every journey is an opportunity for learning . We
               provide the safe and reliable transportation to get you there.
-            </p>
-            <div className="pl-[180px] lg:mt-[-10px]">
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0.8, scale: 1, y: 50 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="pl-[180px] lg:mt-[-10px]"
+            >
               <Image
                 src="/heroArrow.png"
                 alt="Hero Image"
@@ -54,7 +74,7 @@ export default function Home() {
                 height={100}
                 className="max-w-[60px] lg:flex hidden"
               />
-            </div>
+            </motion.div>
             <div className="lg:flex hidden">
               <Link
                 href={"/#contact"}
@@ -80,7 +100,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:flex hidden">
+          <motion.div
+            initial={{ opacity: 0.5, scale: 0.9, x: 150 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="lg:flex hidden"
+          >
             <Image
               src="/heroimg.png"
               alt="Hero Image"
@@ -88,9 +114,15 @@ export default function Home() {
               height={800}
               className=""
             />
-          </div>
+          </motion.div>
         </div>
-        <div className="lg:hidden relative">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, x: 50 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="lg:hidden relative"
+        >
           <div className="flex justify-center">
             <div className="">
               <div className="relative max-w-[500px]">
@@ -146,7 +178,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="w-full">
           <Image
             src="/rocketArrow.png"
@@ -175,14 +207,29 @@ export default function Home() {
           />
         </div>
         <div className="grid lg:grid-cols-2 gap-5 mt-5">
-          <Image
-            src="/aboutimg.png"
-            alt="Hero Image"
-            width={1000}
-            height={1000}
+          <motion.div
+            initial={{ opacity: 0.8, scale: 1, x: -150 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
             className=""
-          />
-          <div className="lg:pt-10">
+          >
+            <Image
+              src="/aboutimg.png"
+              alt="Hero Image"
+              width={1000}
+              height={1000}
+              className=""
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0.8, scale: 1, x: 150 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="lg:pt-10"
+          >
             <p className="lg:text-[22px] text-lb text-justify">
               Padikkal Travels Private Limited is a renowned brand in the bus
               operating industry. Our vision is to give a new face to the bus
@@ -199,7 +246,7 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="w-full ">
           <Image
@@ -213,7 +260,11 @@ export default function Home() {
       </div>
       {/* why choose us */}
       <div id="benefit" className="lg:px-20 px-6 scroll-mt-[120px]">
-        <div className="flex gap-5 items-center">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="flex gap-5 items-center">
           <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Why Choose us
           </h1>
@@ -224,8 +275,14 @@ export default function Home() {
             height={100}
             className="max-w-[30px] lg:max-w-[40px]"
           />
-        </div>
-        <div className="pt-10 grid md:grid-cols-3 gap-x-8 gap-y-5">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 150 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="pt-10 grid md:grid-cols-3 gap-x-8 gap-y-5"
+        >
           <Image
             src="/safety.png"
             alt="Hero Image"
@@ -247,7 +304,7 @@ export default function Home() {
             height={1000}
             className="aspect-square"
           />
-        </div>
+        </motion.div>
         <div className="w-full flex justify-end">
           <Image
             src="/rocketArrow2.png"
@@ -263,7 +320,11 @@ export default function Home() {
         id="partner"
         className="lg:px-20 px-6 bg-secondary py-10 scroll-mt-[70px]"
       >
-        <div className="lg:flex justify-between">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="lg:flex justify-between">
           <div className="flex gap-5 items-center">
             <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
               Our Partner Schools{" "}
@@ -279,7 +340,7 @@ export default function Home() {
           <p className="pt-5 lg:pt-0 text-lb text-xl pr-10 max-w-[550px]">
             We&nbsp;re proud to support these institutions learning journey
           </p>
-        </div>
+        </motion.div>
         <div className="flex justify-end">
           <Image
             src="/rarrow.svg"
@@ -289,7 +350,13 @@ export default function Home() {
             className="max-w-[30px] lg:max-w-[40px]"
           />
         </div>
-        <div className="py-10 flex items-end gap-8 overflow-scroll no-scrollbar">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, x: 150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="py-10 flex items-end gap-8 overflow-scroll no-scrollbar"
+        >
           <div className="relative">
             <Image
               src="/ps1.png"
@@ -342,7 +409,7 @@ export default function Home() {
               <p>Place</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="lg:pl-20 pl-5">
         <Image
@@ -355,7 +422,11 @@ export default function Home() {
       </div>
       {/*  */}
       <div className="lg:px-20 px-6">
-        <div className="flex gap-5 items-center">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="flex gap-5 items-center">
           <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Our Vehicles
           </h1>
@@ -366,9 +437,15 @@ export default function Home() {
             height={100}
             className="max-w-[30px] lg:max-w-[40px]"
           />
-        </div>
+        </motion.div>
         <div className="grid md:grid-cols-2 gap-10 pt-10">
-          <div className="relative w-fit rounded-md overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0.8, scale: 1, x: -100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="relative w-fit rounded-md overflow-hidden"
+          >
             <Image
               src="/omni.png"
               alt="Hero Image"
@@ -380,8 +457,14 @@ export default function Home() {
               <h1 className="text-xl">OMNI</h1>
               <p>(6 Seater)</p>
             </div>
-          </div>
-          <div className="relative w-fit rounded-md overflow-hidden">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0.8, scale: 1, x: 100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="relative w-fit rounded-md overflow-hidden"
+          >
             <Image
               src="/excelo.png"
               alt="Hero Image"
@@ -393,7 +476,7 @@ export default function Home() {
               <h1 className="text-xl">EXCELO</h1>
               <p>(18 Seater)</p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="w-full flex justify-end">
           <Image
@@ -407,7 +490,11 @@ export default function Home() {
       </div>
       {/*  */}
       <div className="lg:px-20 px-6">
-        <div className="flex gap-5 items-center pt-2">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="flex gap-5 items-center pt-2">
           <h1 className="text-yc text-xl md:text-3xl lg:text-4xl">
             We&apos;re Here To Help: FAQ
           </h1>
@@ -420,8 +507,17 @@ export default function Home() {
               className="max-w-[30px] lg:max-w-[40px]"
             />
           </span>
-        </div>
-        <FaqAccordion />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 150 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className=""
+        >
+          <FaqAccordion />
+        </motion.div>
+
         <div className="flex ">
           <Image
             src="/rocketlArrow.png"
@@ -436,7 +532,11 @@ export default function Home() {
       {/*  */}
       <div id="testimonials" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="">
-          <h1 className="text-yc md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
+          <motion.h1
+          initial={{ opacity: 0.8, scale: 1, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="text-yc md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
             What Our Customers{" "}
             <span className="flex items-center gap-5">
               {" "}
@@ -449,7 +549,7 @@ export default function Home() {
                 className="max-w-[30px] lg:max-w-[40px]"
               />
             </span>
-          </h1>
+          </motion.h1>
         </div>
         <div className="flex justify-end">
           <Image
@@ -460,7 +560,11 @@ export default function Home() {
             className="max-w-[30px] lg:max-w-[40px]"
           />
         </div>
-        <div className="pt-10 grid md:grid-cols-2 gap-x-8 gap-y-5">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, x: 150 }}
+          whileInView={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="pt-10 flex overflow-x-scroll lg:grid md:grid-cols-2 gap-x-8 gap-y-5">
           <Image
             src="/c1.png"
             alt="Hero Image"
@@ -475,7 +579,7 @@ export default function Home() {
             height={1000}
             className=""
           />
-        </div>
+        </motion.div>
         <div className="w-full flex justify-end">
           <Image
             src="/rocketArrow2.png"
@@ -488,7 +592,11 @@ export default function Home() {
       </div>
       {/*  */}
       <div className="lg:px-20 px-3 pb-10">
-        <div className="flex gap-5 px-3 lg:px-0 items-center">
+        <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="flex gap-5 px-3 lg:px-0 items-center">
           <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Contact Us{" "}
           </h1>
@@ -499,9 +607,13 @@ export default function Home() {
             height={100}
             className="max-w-[30px] lg:max-w-[40px]"
           />
-        </div>
+        </motion.div>
         <div id="contact" className="lg:px-10 pt-10 scroll-mt-20">
-          <div className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
+          <motion.div
+          initial={{ opacity: 0.8, scale: 1, y: 150 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }} className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
             <div className="">
               <h1 className="lg:text-5xl text-3xl lg:pt-10 text-yc lg:max-w-[370px]">
                 More Than Just a Ride:{" "}
@@ -527,24 +639,31 @@ export default function Home() {
               <div className="md:flex grid lg:pt-10 py-5 gap-5 text-[#453069]">
                 <div className="">
                   <h1 className="text-xl font-semibold">Phone Number</h1>
-                  <Link href={"tel:08046333629"} className="flex gap-5 items-center">
+                  <Link
+                    href={"tel:08046333629"}
+                    className="flex gap-5 items-center"
+                  >
                     <FaPhone />
                     <h1>08040546060</h1>
                   </Link>
                 </div>
                 <div className="">
                   <h1 className="text-xl font-semibold">Email</h1>
-                  <Link href={"mailto:padikkaltt@gmail.com"} className="flex gap-5 items-center">
+                  <Link
+                    href={"mailto:padikkaltt@gmail.com"}
+                    className="flex gap-5 items-center"
+                  >
                     <TbMailFilled className="text-xl" />
                     <h1>padikkaltt@gmail.com</h1>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="w-full">
-              <Form/>
+            <div
+          className="w-full">
+              <Form />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

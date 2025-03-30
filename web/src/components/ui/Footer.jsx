@@ -47,6 +47,7 @@ const Footer = () => {
             <ul className="space-y-2 ">
               <li>
                 <Link href="#" className="text-[#453069] hover:text-gray-900">
+                
                   Benefit
                 </Link>
               </li>
@@ -101,25 +102,42 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 ">
               <li>
-                <Link href="#" className="text-[#453069] hover:text-gray-900">
-                  Facebook
+                <Link href="#" className="text-[#453069] hover:text-gray-900 flex gap-2">
+                <Image
+              src="/insta.svg"
+              width="200"
+              height="200"
+              alt="padikkal"
+              className="max-w-6"
+            />
+                  <h1>Instagram</h1>
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#453069] hover:text-gray-900">
-                  Twitter
+              <Link href="#" className="text-[#453069] hover:text-gray-900 flex gap-2">
+                <Image
+              src="/facebook.svg"
+              width="200"
+              height="200"
+              alt="padikkal"
+              className="max-w-6"
+            />
+                  <h1>Facebook</h1>
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#453069] hover:text-gray-900">
-                  Instagram
+              <Link href="#" className="text-[#453069] hover:text-gray-900 flex gap-2">
+                <Image
+              src="/linkedin.svg"
+              width="200"
+              height="200"
+              alt="padikkal"
+              className="max-w-6"
+            />
+                  <h1>LinkedIn</h1>
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="text-[#453069] hover:text-gray-900">
-                  LinkedIn
-                </Link>
-              </li>
+              
             </ul>
           </div>
         </div>
