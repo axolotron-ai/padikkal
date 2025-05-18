@@ -55,7 +55,7 @@ const NavbarComponent = () => {
 
             <Link
               href={"https://corporate.padikkaltravels.com/"}
-              className="hover:text-black duration-200 text-white border border-white py-[10px] px-7 rounded-md shadow-md"
+              className="hover:text-black duration-200 text-black border bg-white/50 border-black py-[10px] px-7 rounded-md shadow-md"
             >
               CORPORATE
             </Link>
