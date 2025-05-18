@@ -52,6 +52,13 @@ const NavbarComponent = () => {
             >
               Testimonials
             </Link>
+
+            <Link
+              href={"https://corporate.padikkaltravels.com/"}
+              className="hover:text-black duration-200 text-white border border-white py-[10px] px-7 rounded-md shadow-md"
+            >
+              CORPORATE
+            </Link>
             <Link
               href={"/#contact"}
               className="hover:text-black duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-md"
@@ -95,6 +102,12 @@ const NavbarComponent = () => {
               </Link>
               <Link onClick={() => setOpen(false)} href={"/#testimonials"}>
                 Testimonials
+              </Link>
+              <Link
+                href={"https://corporate.padikkaltravels.com/"}
+                className="hover:text-black duration-200 text-white border border-white bg-yc py-[10px] px-7 rounded-md"
+              >
+                CORPORATE
               </Link>
               <Link
                 href={"/#contact"}
