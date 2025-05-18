@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import { motion } from "framer-motion";
+import VideoPlayer from "@/components/ui/VideoPlayer";
 
 const herodata = {
   schools: 20,
@@ -264,7 +265,9 @@ export default function Home() {
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }} className="flex gap-5 items-center">
+          viewport={{ once: true }}
+          className="flex gap-5 items-center"
+        >
           <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Why Choose us
           </h1>
@@ -324,7 +327,9 @@ export default function Home() {
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }} className="lg:flex justify-between">
+          viewport={{ once: true }}
+          className="lg:flex justify-between"
+        >
           <div className="flex gap-5 items-center">
             <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
               Our Partner Schools{" "}
@@ -426,7 +431,9 @@ export default function Home() {
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }} className="flex gap-5 items-center">
+          viewport={{ once: true }}
+          className="flex gap-5 items-center"
+        >
           <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Our Vehicles
           </h1>
@@ -494,7 +501,9 @@ export default function Home() {
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }} className="flex gap-5 items-center pt-2">
+          viewport={{ once: true }}
+          className="flex gap-5 items-center pt-2"
+        >
           <h1 className="text-yc text-xl md:text-3xl lg:text-4xl">
             We&apos;re Here To Help: FAQ
           </h1>
@@ -529,14 +538,16 @@ export default function Home() {
         </div>
       </div>
 
-      {/*  */}
+      {/* testimonials */}
       <div id="testimonials" className="lg:px-20 px-6 scroll-mt-[120px]">
         <div className="">
           <motion.h1
-          initial={{ opacity: 0.8, scale: 1, y: 50 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }} className="text-yc md:flex gap-5 text-2xl md:text-3xl lg:text-4xl">
+            initial={{ opacity: 0.8, scale: 1, y: 50 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-yc md:flex gap-5 text-2xl md:text-3xl lg:text-4xl"
+          >
             What Our Customers{" "}
             <span className="flex items-center gap-5">
               {" "}
@@ -564,21 +575,36 @@ export default function Home() {
           initial={{ opacity: 0.8, scale: 1, x: 150 }}
           whileInView={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }} className="pt-10 flex overflow-x-scroll lg:grid md:grid-cols-2 gap-x-8 gap-y-5">
-          <Image
-            src="/c1.png"
-            alt="Hero Image"
-            width={1000}
-            height={1000}
-            className=""
+          viewport={{ once: true }}
+          className="flex gap-5 overflow-scroll no-scrollbar"
+        >
+          <VideoPlayer
+            videoSrc="/videos/interview_1.mp4"
+            thumbnailSrc="/testimonials/tl1.png"
+            title="Venkatesh"
+            subtitle="Burma Automobiles"
+            rating={4}
+            posterImage="/testimonials/tm1.png"
           />
-          <Image
-            src="/c2.png"
-            alt="Hero Image"
-            width={1000}
-            height={1000}
-            className=""
+          
+          <VideoPlayer
+            videoSrc="/videos/interview_2.mp4"
+            thumbnailSrc="/testimonials/tl2.png"
+            title="Chethan"
+            subtitle="OffSpot"
+            rating={4}
+            posterImage="/testimonials/tm2.png"
           />
+          
+          <VideoPlayer
+            videoSrc="/videos/interview_3.mp4"
+            thumbnailSrc="/testimonials/tl3.png"
+            title="Saraswathi"
+            subtitle="Padikal Travels"
+            rating={4}
+            posterImage="/testimonials/tm3.png"
+          />
+          
         </motion.div>
         <div className="w-full flex justify-end">
           <Image
@@ -596,7 +622,9 @@ export default function Home() {
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: true }} className="flex gap-5 px-3 lg:px-0 items-center">
+          viewport={{ once: true }}
+          className="flex gap-5 px-3 lg:px-0 items-center"
+        >
           <h1 className="text-yc text-2xl md:text-3xl lg:text-4xl">
             Contact Us{" "}
           </h1>
@@ -610,10 +638,12 @@ export default function Home() {
         </motion.div>
         <div id="contact" className="lg:px-10 pt-10 scroll-mt-20">
           <motion.div
-          initial={{ opacity: 0.8, scale: 1, y: 150 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }} className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5">
+            initial={{ opacity: 0.8, scale: 1, y: 150 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5"
+          >
             <div className="">
               <h1 className="lg:text-5xl text-3xl lg:pt-10 text-yc lg:max-w-[370px]">
                 More Than Just a Ride:{" "}
@@ -659,8 +689,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div
-          className="w-full">
+            <div className="w-full">
               <Form />
             </div>
           </motion.div>
