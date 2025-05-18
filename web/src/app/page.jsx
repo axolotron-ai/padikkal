@@ -600,7 +600,7 @@ export default function Home() {
             videoSrc="/videos/interview_3.mp4"
             thumbnailSrc="/testimonials/tl3.png"
             title="Saraswathi"
-            subtitle="Padikal Travels"
+            subtitle="Padikkal Travels"
             rating={4}
             posterImage="/testimonials/tl3.png"
           />
