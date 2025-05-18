@@ -52,7 +52,7 @@ export default function VideoPlayer({
             <img src={thumbnailSrc || "/placeholder.svg"} alt={title} className="w-full h-full object-cover aspect-square" />
           </div>
           <div>
-            <h3 className="lg:text-2xl font-bold text-amber-600">{title}</h3>
+            <h3 className="lg:text-xl font-bold text-amber-600">{title}</h3>
             <p className="text-amber-500 text-sm">{subtitle}</p>
           </div>
         </div>

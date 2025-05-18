@@ -583,7 +583,7 @@ export default function Home() {
             thumbnailSrc="/testimonials/tm1.png"
             title="Venkatesh"
             subtitle="Burma Automobiles"
-            rating={4}
+            rating={5}
             posterImage="/testimonials/tl1.png"
           />
           
@@ -592,7 +592,7 @@ export default function Home() {
             thumbnailSrc="/testimonials/tm2.png"
             title="Chethan"
             subtitle="OffSpot"
-            rating={4}
+            rating={5}
             posterImage="/testimonials/tl2.png"
           />
           
@@ -600,8 +600,8 @@ export default function Home() {
             videoSrc="/videos/interview_3.mp4"
             thumbnailSrc="/testimonials/tl3.png"
             title="Saraswathi"
-            subtitle="Padikal Travels"
-            rating={4}
+            subtitle="Padikkal Travels"
+            rating={5}
             posterImage="/testimonials/tl3.png"
           />
           
