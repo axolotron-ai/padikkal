@@ -580,20 +580,20 @@ export default function Home() {
         >
           <VideoPlayer
             videoSrc="/videos/interview_1.mp4"
-            thumbnailSrc="/testimonials/tl1.png"
+            thumbnailSrc="/testimonials/tm1.png"
             title="Venkatesh"
             subtitle="Burma Automobiles"
             rating={4}
-            posterImage="/testimonials/tm1.png"
+            posterImage="/testimonials/tl1.png"
           />
           
           <VideoPlayer
             videoSrc="/videos/interview_2.mp4"
-            thumbnailSrc="/testimonials/tl2.png"
+            thumbnailSrc="/testimonials/tm2.png"
             title="Chethan"
             subtitle="OffSpot"
             rating={4}
-            posterImage="/testimonials/tm2.png"
+            posterImage="/testimonials/tl2.png"
           />
           
           <VideoPlayer
@@ -602,7 +602,7 @@ export default function Home() {
             title="Saraswathi"
             subtitle="Padikal Travels"
             rating={4}
-            posterImage="/testimonials/tm3.png"
+            posterImage="/testimonials/tl3.png"
           />
           
         </motion.div>
