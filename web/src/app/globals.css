@@ -8,7 +8,7 @@
   --color-tertiary: #FCB303;
   --color-lb: #A9A9A9;
   --color-yc: #F39C12;
-  
+  --color-dt: #F39C12;
 }
 
 body {
@@ -53,4 +53,13 @@ body {
 /* For Edge and IE */
 body {
   -ms-overflow-style: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
