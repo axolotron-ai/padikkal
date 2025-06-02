@@ -71,7 +71,7 @@ const NavbarComponent = () => {
           </div>
         </div>
       </motion.div>
-      <div className="h-[60px]"></div>
+      <div className="h-[48px]"></div>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         <section className="flex flex-col justify-between w-full min-w-[150px] h-[100vh] px-10">
           <div className="">

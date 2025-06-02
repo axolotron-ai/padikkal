@@ -241,7 +241,7 @@ export default function Home() {
             </p>
             <div className="pt-10">
               <Link
-                href={"/"}
+                href={"/about"}
                 className="hover:text-black h-fit duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Learn More
@@ -362,58 +362,17 @@ export default function Home() {
           viewport={{ once: true }}
           className="py-10 flex items-end gap-8 overflow-scroll no-scrollbar"
         >
-          <div className="relative">
-            <Image
-              src="/ps1.png"
-              alt="Hero Image"
-              width={1000}
-              height={1000}
-              className="rounded-md min-w-[320px] lg:min-w-[340px]"
-            />
-            <div className="absolute bottom-0 text-white px-5 pb-5 ">
-              <h1 className="text-xl">School Name</h1>
-              <p>Place</p>
+          {[...Array(8)].map((_, index) => (
+            <div key={index} className="relative">
+              <Image
+                src={`/schools/${index + 1}.png`}
+                alt="Hero Image"
+                width={1000}
+                height={1000}
+                className="rounded-md min-w-[320px] lg:min-w-[340px]"
+              />
             </div>
-          </div>
-          <div className="relative">
-            <Image
-              src="/ps2.png"
-              alt="Hero Image"
-              width={1000}
-              height={1000}
-              className="rounded-md min-w-[320px] lg:min-w-[340px]"
-            />
-            <div className="absolute bottom-0 text-white px-5 pb-5 ">
-              <h1 className="text-xl">School Name</h1>
-              <p>Place</p>
-            </div>
-          </div>
-          <div className="relative">
-            <Image
-              src="/ps3.png"
-              alt="Hero Image"
-              width={1000}
-              height={1000}
-              className="rounded-md min-w-[320px] lg:min-w-[340px]"
-            />
-            <div className="absolute bottom-0 text-white px-5 pb-5 ">
-              <h1 className="text-xl">School Name</h1>
-              <p>Place</p>
-            </div>
-          </div>
-          <div className="relative">
-            <Image
-              src="/ps4.png"
-              alt="Hero Image"
-              width={1000}
-              height={1000}
-              className="rounded-md min-w-[320px] lg:min-w-[340px]"
-            />
-            <div className="absolute bottom-0 text-white px-5 pb-5 ">
-              <h1 className="text-xl">School Name</h1>
-              <p>Place</p>
-            </div>
-          </div>
+          ))}
         </motion.div>
       </div>
       <div className="lg:pl-20 pl-5">
@@ -586,7 +545,7 @@ export default function Home() {
             rating={5}
             posterImage="/testimonials/tl1.png"
           />
-          
+
           <VideoPlayer
             videoSrc="/videos/interview_2.mp4"
             thumbnailSrc="/testimonials/tm2.png"
@@ -595,7 +554,7 @@ export default function Home() {
             rating={5}
             posterImage="/testimonials/tl2.png"
           />
-          
+
           <VideoPlayer
             videoSrc="/videos/interview_3.mp4"
             thumbnailSrc="/testimonials/tl3.png"
@@ -604,7 +563,6 @@ export default function Home() {
             rating={5}
             posterImage="/testimonials/tl3.png"
           />
-          
         </motion.div>
         <div className="w-full flex justify-end">
           <Image
