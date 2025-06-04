@@ -216,11 +216,11 @@ export default function Home() {
             className=""
           >
             <Image
-              src="/aboutimg.png"
+              src="/about_new.png"
               alt="Hero Image"
               width={1000}
               height={1000}
-              className=""
+              className="rounded-xl"
             />
           </motion.div>
 
