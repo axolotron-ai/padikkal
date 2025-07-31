@@ -33,12 +33,12 @@ export default function FaqAccordion() {
   };
 
   return (
-    <div className="lg:px-20 pt-10">
+    <div className="lg:px-20 pt-10 ">
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-secondary p-5 lg:px-10 rounded-lg text-justify shadow text-sm md:text-md lg:text-xl"
+            className="bg-[#FFF5E4] p-5 lg:px-10 rounded-lg text-justify shadow text-sm md:text-md lg:text-xl"
           >
             <button className={`flex gap-3  justify-between text-[#453069] w-full text-justify  font-medium ${openIndex === index ? `items-start` : `items-center`} `}>
               <div className="">

@@ -79,12 +79,12 @@ export default function Home() {
             <div className="lg:flex hidden">
               <Link
                 href={"/#contact"}
-                className="hover:text-black duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
+                className="hover:text-black duration-200 text-white bg-gradient-to-r from-secondary to-accent py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Get Started
               </Link>
             </div>
-            <div className="pt-5 mt-10 bg-secondary p-3 rounded-md text-tertiary hidden lg:grid grid-cols-2 divide-x divide-tertiary w-fit">
+            <div className="pt-5 mt-10 bg-[#FFF8F2] p-3 rounded-md text-tertiary hidden lg:grid grid-cols-2 divide-x divide-tertiary w-fit">
               <div className="text-center px-5">
                 <AnimatedNumber
                   value={herodata.schools}
@@ -242,7 +242,7 @@ export default function Home() {
             <div className="pt-10">
               <Link
                 href={"/about"}
-                className="hover:text-black h-fit duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
+                className="hover:text-black h-fit duration-200 text-white bg-gradient-to-r from-secondary to-accent py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Learn More
               </Link>
@@ -321,7 +321,7 @@ export default function Home() {
       {/* our partner */}
       <div
         id="partner"
-        className="lg:px-20 px-6 bg-secondary py-10 scroll-mt-[70px]"
+        className="lg:px-20 px-6 bg-[#FFF8F2] py-10 scroll-mt-[70px]"
       >
         <motion.div
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
@@ -555,14 +555,14 @@ export default function Home() {
             posterImage="/testimonials/tl2.png"
           />
 
-          <VideoPlayer
+          {/* <VideoPlayer
             videoSrc="/videos/interview_3.mp4"
             thumbnailSrc="/testimonials/tl3.png"
             title="Saraswathi"
             subtitle="Padikkal Travels"
             rating={5}
             posterImage="/testimonials/tl3.png"
-          />
+          /> */}
         </motion.div>
         <div className="w-full flex justify-end">
           <Image
@@ -600,7 +600,7 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="bg-secondary w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5"
+            className="bg-[#FFF8F2] w-full grid lg:grid-cols-2 lg:py-8 lg:px-20 rounded-xl  p-5"
           >
             <div className="">
               <h1 className="lg:text-5xl text-3xl lg:pt-10 text-yc lg:max-w-[370px]">

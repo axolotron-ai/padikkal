@@ -49,7 +49,7 @@ const Form = () => {
     <div>
       <form
         onSubmit={handleSubmit}
-        className="bg-[#FFFFE5] border rounded-xl p-5 lg:p-10 grid gap-7 border-gray-300"
+        className="bg-white border rounded-xl p-5 lg:p-10 grid gap-7 border-gray-300"
       >
         <div className="grid gap-2">
           <label className="lg:text-xl">Name</label>

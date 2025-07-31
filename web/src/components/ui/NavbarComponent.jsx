@@ -22,9 +22,9 @@ const NavbarComponent = () => {
         viewport={{ once: true }}
         className="fixed w-full top-0 left-0 z-[100] navbar"
       >
-        <div className="flex justify-between items-center py-3 lg:px-20 px-8 bg-primary">
+        <div className="flex justify-between items-center py-3 lg:px-20 px-8 text-white bg-primary">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             width="200"
             height="200"
             alt="padikkal"
@@ -55,13 +55,13 @@ const NavbarComponent = () => {
 
             <Link
               href={"https://corporate.padikkaltravels.com/"}
-              className="hover:text-black duration-200 text-black border bg-white/50 border-black py-[10px] px-7 rounded-md shadow-md"
+              className="hover:text-black duration-200 text-black border bg-white border-black py-[10px] px-7 rounded-md shadow-md"
             >
               CORPORATE
             </Link>
             <Link
               href={"/#contact"}
-              className="hover:text-black duration-200 text-white bg-yc py-[10px] px-7 rounded-md shadow-md"
+              className="hover:text-black duration-200 text-white bg-gradient-to-r from-secondary to-accent py-[10px] px-7 rounded-md shadow-md"
             >
               Get Started
             </Link>
@@ -105,7 +105,7 @@ const NavbarComponent = () => {
               </Link>
               <Link
                 href={"https://corporate.padikkaltravels.com/"}
-                className="hover:text-black duration-200 text-white border border-white bg-yc py-[10px] px-7 rounded-md"
+                className="hover:text-black duration-200 border bg-white py-[10px] px-7 rounded-md"
               >
                 CORPORATE
               </Link>
@@ -122,7 +122,7 @@ const NavbarComponent = () => {
             <div className="">
               <div className="flex items-center gap-2">
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   width="500"
                   height="500"
                   alt=""
