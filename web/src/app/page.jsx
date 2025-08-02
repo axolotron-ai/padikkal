@@ -61,7 +61,7 @@ export default function Home() {
               We believe every journey is an opportunity for learning . We
               provide the safe and reliable transportation to get you there.
             </motion.p>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0.8, scale: 1, y: 50 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -75,16 +75,16 @@ export default function Home() {
                 height={100}
                 className="max-w-[60px] lg:flex hidden"
               />
-            </motion.div>
+            </motion.div> */}
             <div className="lg:flex hidden">
               <Link
                 href={"/#contact"}
-                className="hover:text-black duration-200 text-white bg-gradient-to-r from-secondary to-accent py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
+                className="hover:text-blac mt-10 duration-200 text-white bg-gradient-to-r from-secondary to-accent py-[10px] px-7 rounded-md shadow-inner shadow-secondary"
               >
                 Get Started
               </Link>
             </div>
-            <div className="pt-5 mt-10 bg-[#FFF8F2] p-3 rounded-md text-tertiary hidden lg:grid grid-cols-2 divide-x divide-tertiary w-fit">
+            <div className="pt-5 mt-10 bg-[#FFF8F2] p-3 rounded-md text-black hidden lg:grid grid-cols-2 divide-x divide-tertiary w-fit">
               <div className="text-center px-5">
                 <AnimatedNumber
                   value={herodata.schools}
@@ -134,7 +134,7 @@ export default function Home() {
                   height={1000}
                   className="lg:hidden flex pt-5"
                 />
-                <div className=" bg-secondary p-3 text-sm rounded-md text-tertiary grid grid-cols-2 divide-x divide-tertiary w-fit absolute bottom-0 md:bottom-5 right-0">
+                <div className=" bg-secondary p-3 text-sm rounded-md text-white font-bold grid grid-cols-2 divide-x divide-tertiary w-fit absolute bottom-0 md:bottom-5 right-0">
                   <div className="text-center px-5">
                     <AnimatedNumber
                       value={herodata.schools}
@@ -153,19 +153,19 @@ export default function Home() {
               </div>
               <div className="flex justify-end mt-[-20px] pr-5">
                 <div className="">
-                  <Image
+                  {/* <Image
                     src="/heroArrow.png"
                     alt="Hero Image"
                     width={100}
                     height={100}
                     className="max-w-[60px] float-right mr-16"
-                  />
+                  /> */}
                 </div>
               </div>
               <div className="flex justify-between">
                 <Link
                   href={"/#contact"}
-                  className="hover:text-black h-fit duration-200 text-white bg-tertiary py-[10px] px-7 rounded-md border border-white shadow-2xl "
+                  className="hover:text-black h-fit duration-200 text-white bg-gradient-to-r mt-10 from-secondary to-accent py-[10px] px-7 rounded-md border border-white shadow-2xl "
                 >
                   Get Started
                 </Link>
@@ -404,7 +404,7 @@ export default function Home() {
             className="max-w-[30px] lg:max-w-[40px]"
           />
         </motion.div>
-        <div className="grid md:grid-cols-2 gap-10 pt-10">
+        <div className="grid md:grid-cols-2 gap-10 pt-10 font-bold">
           <motion.div
             initial={{ opacity: 0.8, scale: 1, x: -100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -419,7 +419,7 @@ export default function Home() {
               height={1000}
               className="rounded-md hover:scale-105 object-cover duration-200"
             />
-            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-yc">
+            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-white">
               <h1 className="text-xl">OMNI</h1>
               <p>(6 Seater)</p>
             </div>
@@ -438,7 +438,7 @@ export default function Home() {
               height={1000}
               className="rounded-md hover:scale-105 object-cover duration-200"
             />
-            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-yc">
+            <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-white">
               <h1 className="text-xl">EXCELO</h1>
               <p>(18 Seater)</p>
             </div>
