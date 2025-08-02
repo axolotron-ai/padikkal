@@ -122,7 +122,7 @@ const NavbarComponent = () => {
             <div className="">
               <div className="flex items-center gap-2">
                 <Image
-                  src="/logo.svg"
+                  src="/logo1.png"
                   width="500"
                   height="500"
                   alt=""
