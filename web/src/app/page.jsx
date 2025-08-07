@@ -109,7 +109,7 @@ export default function Home() {
             className="lg:flex hidden"
           >
             <Image
-              src="/heroimg.png"
+              src="/hero-bus.png"
               alt="Hero Image"
               width={1920}
               height={800}
@@ -128,7 +128,7 @@ export default function Home() {
             <div className="">
               <div className="relative max-w-[500px]">
                 <Image
-                  src="/heroimgsm.png"
+                  src="/hero-bus.png"
                   alt="Hero Image"
                   width={1000}
                   height={1000}
@@ -216,7 +216,7 @@ export default function Home() {
             className=""
           >
             <Image
-              src="/about_new.png"
+              src="/buses.png"
               alt="Hero Image"
               width={1000}
               height={1000}
