@@ -385,7 +385,7 @@ export default function Home() {
         />
       </div>
       {/*  */}
-      <div className="lg:px-20 px-6">
+      <div className="lg:px-20 px-6" id="service">
         <motion.div
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -455,7 +455,7 @@ export default function Home() {
         </div>
       </div>
       {/*  */}
-      <div className="lg:px-20 px-6">
+      <div className="lg:px-20 px-6" id="faq">
         <motion.div
           initial={{ opacity: 0.8, scale: 1, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}

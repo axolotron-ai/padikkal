@@ -44,27 +44,27 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 ">
               <li>
-                <Link href="#" className="text-white hover:text-gray-900">
+                <Link href="/#benefit" className="text-white hover:text-gray-900">
                   Benefit
                 </Link>
               </li>
               <li>
-                <Link href="#" className=" hover:text-gray-900">
+                <Link href="/#partner" className=" hover:text-gray-900">
                   Partner
                 </Link>
               </li>
               <li>
-                <Link href="#" className="  hover:text-gray-900">
+                <Link href="/#service" className="  hover:text-gray-900">
                   Service
                 </Link>
               </li>
               <li>
-                <Link href="#" className="  hover:text-gray-900">
+                <Link href="/#faq" className="  hover:text-gray-900">
                   Faq
                 </Link>
               </li>
               <li>
-                <Link href="#" className="  hover:text-gray-900">
+                <Link href="/#testimonials" className="  hover:text-gray-900">
                   Testimonials
                 </Link>
               </li>
@@ -99,7 +99,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 ">
               <li>
-                <Link href="#" className="  hover:text-gray-900 flex gap-2">
+                <Link href="https://instagram.com/padikkaltravels" className="  hover:text-gray-900 flex gap-2">
                   <Image
                     src="/insta.svg"
                     width="200"
@@ -111,7 +111,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="  hover:text-gray-900 flex gap-2">
+                <Link href="https://facebook.com/padikkaltravels" className="  hover:text-gray-900 flex gap-2">
                   <Image
                     src="/facebook.svg"
                     width="200"
@@ -123,7 +123,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="  hover:text-gray-900 flex gap-2">
+                <Link href="https://linkedin.com/company/padikkal-travels" className="  hover:text-gray-900 flex gap-2">
                   <Image
                     src="/linkedin.svg"
                     width="200"
