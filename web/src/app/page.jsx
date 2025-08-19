@@ -420,8 +420,8 @@ export default function Home() {
               className="rounded-md hover:scale-105 object-cover duration-200"
             />
             <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-white">
-              <h1 className="text-xl">OMNI</h1>
-              <p>(6 Seater)</p>
+              <h1 className="text-xl">Eicher</h1>
+              <p>(40 Seater)</p>
             </div>
           </motion.div>
           <motion.div
@@ -439,8 +439,8 @@ export default function Home() {
               className="rounded-md hover:scale-105 object-cover duration-200"
             />
             <div className="bg-secondary pl-5 pr-10 py-3 rounded-tr-full absolute bottom-0 left-0 text-white">
-              <h1 className="text-xl">EXCELO</h1>
-              <p>(18 Seater)</p>
+              <h1 className="text-xl">Mahindra</h1>
+              <p>(50 Seater)</p>
             </div>
           </motion.div>
         </div>
