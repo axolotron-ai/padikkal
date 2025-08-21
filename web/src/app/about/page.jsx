@@ -9,19 +9,19 @@ export default function Page() {
           alt="About Hero"
           width={1920}
           height={1080}
-          className="object-contain z-0"
+          className="object-contain z-0 brightness-80"
         />
         <div className="absolute lg:inset-y-0 bg-opacity-40 lg:flex lg:items-center lg:justify-center px-4 md:px-10 bottom-10">
           <h1 className="text-white font-semibold text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl max-w-6xl leading-snug tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-            <span className="text-primary">Our</span> passion for travel{" "}
-            <span className="text-primary">drives us to</span> create
+            <span className="text-dt">Our</span> passion for travel{" "}
+            <span className="text-dt">drives us to</span> create
             unforgettable experiences.
           </h1>
         </div>
       </div>
       <div className="flex justify-end lg:px-20 mt-[-20px] z-1 relative px-5">
         <div className="rounded-xl bg-secondary text-dt">
-          <h1 className="lg:text-3xl md:text-2xl font-[500] lg:p-8 p-3">
+          <h1 className="lg:text-3xl md:text-2xl font-bold text-white lg:p-8 p-3 ">
             12 Years of Travelling
           </h1>
         </div>
