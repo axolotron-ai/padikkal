@@ -44,7 +44,10 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 ">
               <li>
-                <Link href="/#benefit" className="text-white hover:text-gray-900">
+                <Link
+                  href="/#benefit"
+                  className="text-white hover:text-gray-900"
+                >
                   Benefit
                 </Link>
               </li>
@@ -73,24 +76,14 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2 ">
-              <li>
-                <Link href="#" className="  hover:text-gray-900">
-                  Help Center
+               <li>
+                <Link href="/terms-conditions" className="  hover:text-gray-900">
+                 Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="#" className="  hover:text-gray-900">
-                  Safety
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="  hover:text-gray-900">
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="  hover:text-gray-900">
-                  Privacy
+                <Link href="/privacy-policy" className="  hover:text-gray-900">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
@@ -99,7 +92,10 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 ">
               <li>
-                <Link href="https://instagram.com/padikkaltravels" className="  hover:text-gray-900 flex gap-2">
+                <Link
+                  href="https://instagram.com/padikkaltravels"
+                  className="  hover:text-gray-900 flex gap-2"
+                >
                   <Image
                     src="/insta.svg"
                     width="200"
@@ -111,7 +107,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="https://facebook.com/padikkaltravels" className="  hover:text-gray-900 flex gap-2">
+                <Link
+                  href="https://facebook.com/padikkaltravels"
+                  className="  hover:text-gray-900 flex gap-2"
+                >
                   <Image
                     src="/facebook.svg"
                     width="200"
@@ -123,7 +122,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="https://linkedin.com/company/padikkal-travels" className="  hover:text-gray-900 flex gap-2">
+                <Link
+                  href="https://linkedin.com/company/padikkal-travels"
+                  className="  hover:text-gray-900 flex gap-2"
+                >
                   <Image
                     src="/linkedin.svg"
                     width="200"
