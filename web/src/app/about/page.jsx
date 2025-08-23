@@ -22,7 +22,7 @@ export default function Page() {
       <div className="flex justify-end lg:px-20 mt-[-20px] z-1 relative px-5">
         <div className="rounded-xl bg-secondary text-dt">
           <h1 className="lg:text-3xl md:text-2xl font-bold text-white lg:p-8 p-3 ">
-            12 Years of Travelling
+            20 Years of Travelling
           </h1>
         </div>
       </div>
