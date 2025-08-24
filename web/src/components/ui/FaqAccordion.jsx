@@ -14,11 +14,6 @@ const faqs = [
       "All our drivers undergo thorough background checks and possess valid commercial driver's licenses. Our vehicles are regularly inspected and maintained to the highest safety standards.  All our vehicles are equipped with GPS tracking, allowing us to monitor their location in real-time. Our drivers are trained in emergency procedures and first aid.  Mandatory seat belt usage is enforced for all passengers.",
   },
   {
-    question: "Do you have testimonials from other schools?",
-    answer:
-      "Yes, we have a strong track record of providing reliable and safe transportation for schools.We can provide references or testimonials from schools that have used our services upon request. We are also happy to share reviews or feedback posted online.",
-  },
-  {
     question: "Can you provide transportation for students with special needs?",
     answer:
       "Absolutely. We are committed to providing the accessible transportation for all students. We can accommodate students with disabilities by providing vehicles equipped with wheelchair lifts, ramps, and other necessary accommodations. Please inform us of any specific needs during the booking process so we can ensure the appropriate vehicle and support are provided.",

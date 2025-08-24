@@ -22,7 +22,7 @@ export default function Page() {
       <div className="flex justify-end lg:px-20 mt-[-20px] z-1 relative px-5">
         <div className="rounded-xl bg-secondary text-dt">
           <h1 className="lg:text-3xl md:text-2xl font-bold text-white lg:p-8 p-3 ">
-            20 Years of Travelling
+            20+ Years of Travelling
           </h1>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function Page() {
         </p>
       </div>
       <div className="lg:px-20 md:px-12 px-8 py-5">
-        <h1 className="lg:text-4xl text-2xl text-dt">Features</h1>
+        <h1 className="lg:text-4xl text-2xl text-dt">What we provide</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-5 gap-x-10">
           <div className="">
             <Image src="/ac1.png" width={1000} height={1000} alt="" />

@@ -343,7 +343,7 @@ export default function Home() {
             />
           </div>
           <p className="pt-5 lg:pt-0 text-lb text-xl pr-10 max-w-[550px]">
-            We&apos;re proud to support the learning journey of these institutions
+            We&apos;re proud to provide world-class transport facility for these institutions
           </p>
         </motion.div>
         <div className="flex justify-end">
