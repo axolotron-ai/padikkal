@@ -28,10 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-      </head>
-      <body className="antialiased">
-        {/* Google Tag Manager */}
-        <Script
+         <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -42,6 +39,10 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-KGJGLB8D');`,
           }}
         />
+      </head>
+      <body className="antialiased">
+        {/* Google Tag Manager */}
+       
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KGJGLB8D"
